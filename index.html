@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div>
+      <div class="main-container">
+        <header>
+          <h1>Create Account</h1>
+          <nav>
+            <ul>
+              <li>
+                <a href="www.google.com"><i class="fab fa-google"></i></a>
+              </li>
+              <li>
+                <a href="www.facebook.com"
+                  ><i class="fab fa-facebook-f small"></i
+                ></a>
+              </li>
+              <li>
+                <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="www.vk.com"><i class="fab fa-vk big"></i></a>
+              </li>
+            </ul>
+          </nav>
+          <p>or use you email for registration:</p>
+        </header>
+        <main>
+          <form>
+            <div class="input-container">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" onkeyup="checkInput(this)" />
+            </div>
+            <div class="input-container">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" onkeyup="checkInput(this)" />
+            </div>
+            <div class="input-container">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" onkeyup="checkInput(this)" />
+            </div>
+            <div class="checkbox-container">
+              <label for="terms"
+                >I agree to the <a href="#">Terms</a> and
+                <a href="#">Privacy Policy</a>.</label
+              >
+              <input type="checkbox" name="terms" id="terms" />
+            </div>
+            <div class="buttons-container">
+              <button type="button" onclick="validateForm()">Sign Up</button>
+              <button type="button">Sign In</button>
+            </div>
+          </form>
+        </main>
+      </div>
+      <aside class="banner"></aside>
+    </div>
+    
+
+    <section class="modal-container" id="modalContainer">
+        <article class="modal modal-close" id="modal">
+            <p class="close" id="close">X</p>
+            <section class="modal-texts">
+                <p id="modal-text"></p>
+            </section>
+        </article>
+    </section>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+    
+.input-container
+    position: relative
+    margin: 1.75rem 0
+    label
+        position: absolute
+        top: .65rem
+        left: 1rem
+        color: $secondary-color
+        transition: all .2s ease
+    input
+        padding: .65rem 1rem
+        border-radius: 10px
+        border: 2px solid $secondary-color
+        background-color: #F6F8FA
+        width: 100%
+    &:focus-within label, 
+        @extend .label-top
+            
+  
+.checkbox-container
+        display: flex
+        label
+            order: 1
+            margin-left: .5rem
+        a
+            color: $primary-color
+            text-decoration: none
+
+.buttons-container
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 1rem
+    padding: 1.2rem 0
+    button
+        &:first-of-type
+            @include button($primary-color, white)
+        &:last-of-type
+            @include button(white, $primary-color)
